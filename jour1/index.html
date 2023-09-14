@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='scripts.js'></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://laplateforme.io">Site La Plateforme</a></li>
+                <li><a href="https://intra.laplateforme.io">Intra La Plateforme</a></li>
+                <li><a href="#job03">Aller au Job 3</a></li>
+                <li><a href="#job04">Aller au Job 4</a></li>
+                <li><a href="#job05">Aller au Job 5</a></li>
+                <li><a href="#job07">Aller au Job 7</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="job03">
+            <aside>
+                <h3>Formulaire</h3>
+                <form action="index.html" method="post">
+                    <label for="name">
+                        Prénom:
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <br>
+                    <label for="lastname">
+                        Nom:
+                        <input type="text" name="lastname" id="lastname">
+                    </label>
+                    <br>
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <br>
+                    <label for="password">
+                        Mot de passe:
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <br>
+                    <label for="remember-me">
+                        Se souvenir de moi ?
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                    </label>
+                    <br>
+                    <label for="choice-home">
+                        Allez sur le Dashboard
+                        <input type="radio" name="choice-location" id="choice-home">
+                    </label>
+                    <br>
+                    <label for="choice-admin">
+                        Allez sur le panel d'administration
+                        <input type="radio" name="choice-location" id="choice-admin">
+                    </label>
+                    <br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </aside>
+        </article>
+        <section id="job04">
+            <h3>Image et Vidéo</h3>
+            <img src="img.png" alt="Des Marios qui envahissent le Royaume Champignon." title="Quand on fait nimp avec le code source" width="545" height="306"/>
+            <!-- Intégration Vidéo -->
+            <iframe width="545" height="306" src="https://www.youtube.com/embed/8U4CCAFLqEs" title="Cyril Zimmermann à La Plateforme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section id="job05">
+            <h3>Tableau</h3>
+            <table>
+                <thead>     <!-- En-tête de tableau -->
+                    <tr>
+                        <!-- colspan à 2 pour que la cellule du tableau prenne 2 cases -->
+                        <th colspan="2">Liste de personnes</th>
+                    </tr>
+                </thead>
+                <tbody>     <!-- Corps de tableau -->
+                    <tr>
+                        <td>Bob</td>
+                        <td>#100</td>
+                    </tr>
+                    <tr>
+                        <td>Marc</td>
+                        <td>#101</td>
+                    </tr>
+                    <tr>
+                        <td>Jean</td>
+                        <td>#102</td>
+                    </tr>
+                </tbody>
+                <tfoot>     <!-- Pied de tableau -->
+                    <tr>
+                        <!-- colspan à 2 pour que la cellule du tableau prenne 2 cases -->
+                        <th colspan="2">Fin liste</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="job07">
+            <h3>Listes ordonnées et non ordonnées</h3>
+            <h4>Comment push son projet:</h4>
+            <ol>
+                <li>git add</li>
+                <li>git commit</li>
+                <li>git push</li>
+            </ol>
+            <h4>En cas d'erreur:</h4>
+            <ul>
+                <li>Voir si on est bien dans le root du repo.</li>
+            </ul>
+            <h4>Si le problème persiste:</h4>
+            <ul>
+                <li>Ne pas paniquer.</li>
+                <li>git clone</li>
+                <li>Ctrl+C & Ctrl+V</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
