@@ -1,0 +1,85 @@
+:root {
+    --button-color: rgb(253, 227, 224);
+    --button-color-hover: rgb(255, 190, 181);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly   ;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+nav a:visited {
+    color: black;
+}
+
+#job03 {
+    display: flex;
+    justify-content: center;
+}
+
+#job03 aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background-color: rgb(252, 115, 97);
+    background: linear-gradient(to top, rgb(252, 115, 97) 80%, var(--button-color-hover) 100%);
+    background-color: rgb(252, 115, 97);
+    border-radius: 10px;
+}
+
+#job03 form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#job03 form label input[type="checkbox"] {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#job03 form input {
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+#job03 form input:hover {
+    animation: button-transition 0.3s;
+    background-color: var(--button-color-hover);
+    border-color: var(--button-color-hover);
+}
+
+@keyframes button-transition {
+    from {
+        background-color: var(--button-color);
+      }
+      to {
+          background-color: var(--button-color-hover);
+      }
+}
+
+#job03 form button[type="submit"]:hover {
+    animation: spin 0.3s linear infinite;
+}
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

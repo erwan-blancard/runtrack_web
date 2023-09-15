@@ -5,7 +5,21 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='scripts.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Page HTML Jour 2">
+    <!-- Style pour le tableau -->
+    <style>
+        .tableau tbody tr {
+            border: 1px;
+            margin: 4px;
+            border-color: black;
+        }
+
+        .tableau th {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,50 +36,6 @@
         </nav>
     </header>
     <main>
-        <article id="job03">
-            <aside>
-                <h3>Formulaire</h3>
-                <!-- Formulaire contenant le prénom, nom, email, mdp et autres options -->
-                <form action="index.html" method="post">
-                    <label for="name">
-                        Prénom:
-                        <input type="text" name="name" id="name">
-                    </label>
-                    <br>
-                    <label for="lastname">
-                        Nom:
-                        <input type="text" name="lastname" id="lastname">
-                    </label>
-                    <br>
-                    <label for="email">
-                        Email:
-                        <input type="email" name="email" id="email">
-                    </label>
-                    <br>
-                    <label for="password">
-                        Mot de passe:
-                        <input type="password" name="password" id="password">
-                    </label>
-                    <br>
-                    <label for="remember-me">
-                        Se souvenir de moi ?
-                        <input type="checkbox" name="remember-me" id="remember-me">
-                    </label>
-                    <br>
-                    <label for="choice-home">
-                        Allez sur le Dashboard
-                        <input type="radio" name="choice-location" id="choice-home">
-                    </label>
-                    <br>
-                    <label for="choice-admin">
-                        Allez sur le panel d'administration
-                        <input type="radio" name="choice-location" id="choice-admin">
-                    </label>
-                    <br>
-                    <button type="submit">Envoyer</button>
-                </form>
-            </aside>
-        </article>
         <section id="job04">
             <h3>Image et Vidéo</h3>
             <img src="img.png" alt="Des Marios qui envahissent le Royaume Champignon." title="Quand on fait nimp avec le code source" width="545" height="306"/>
@@ -74,7 +44,7 @@
         </section>
         <section id="job05">
             <h3>Tableau</h3>
-            <table>
+            <table class="tableau">
                 <thead>     <!-- En-tête de tableau -->
                     <tr>
                         <!-- colspan à 2 pour que la cellule du tableau prenne 2 cases -->
@@ -132,9 +102,53 @@
             <br>
             <abbr title="Abréviation">Abrév'</abbr>
         </section>
+        <article id="job03">
+            <aside>
+                <h3>Formulaire</h3>
+                <!-- Formulaire contenant le prénom, nom, email, mdp et autres options -->
+                <form action="index.html" method="post">
+                    <label for="name">
+                        Prénom:
+                        <input type="text" name="name" id="name">
+                    </label>
+                    <br>
+                    <label for="lastname">
+                        Nom:
+                        <input type="text" name="lastname" id="lastname">
+                    </label>
+                    <br>
+                    <label for="email">
+                        Email:
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <br>
+                    <label for="password">
+                        Mot de passe:
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <br>
+                    <label for="remember-me">
+                        Se souvenir de moi ?
+                        <input type="checkbox" name="remember-me" id="remember-me">
+                    </label>
+                    <br>
+                    <label for="choice-home">
+                        Allez sur le Dashboard
+                        <input type="radio" name="choice-location" id="choice-home">
+                    </label>
+                    <br>
+                    <label for="choice-admin">
+                        Allez sur le panel d'administration
+                        <input type="radio" name="choice-location" id="choice-admin">
+                    </label>
+                    <br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </aside>
+        </article>
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>
